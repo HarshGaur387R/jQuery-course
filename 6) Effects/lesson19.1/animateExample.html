@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <title>Document</title>
+
+    <script>
+        $(function () {
+            var a = true;
+            $("div").click(function () {
+                $("div").animate({
+                    width: ((a) ? '+' : '-') + '=200px'
+                }, 1000);
+                a = !a;
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            display: inline-block;
+            padding: 25px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>Click me</div>
+</body>
+
+</html>

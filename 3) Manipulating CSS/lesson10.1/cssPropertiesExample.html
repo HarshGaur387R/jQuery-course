@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            alert($('p').css('background-color'));
+            $('p').css('background-color', 'blue');
+            $('#mcp').css({ "background-color": "green", "font-size": "20px", "color": "red" });
+
+        });
+    </script>
+    <style>
+        p {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Some text</p>
+
+
+    <p>multiple css properties</p>
+
+    <p id="mcp">Some text 2</p>
+</body>
+
+</html>

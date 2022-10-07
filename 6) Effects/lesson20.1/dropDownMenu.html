@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <title>Drop Down Menu</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .menu{
+            background-color: gray;
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        #item{
+            font-size: xx-large;
+            padding: 15px;
+        }
+
+        #submenu{
+            display:none;
+
+        }
+
+        #submenu a{
+            font-size: larger;
+            display: block;
+            text-decoration: none;
+            color: antiquewhite;
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $('#item').click(function(){
+                $('#submenu').slideToggle(500);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+
+        <div id="item">Drop-Down</div>
+
+        <div id="submenu">
+
+            <a href="#">HOME</a>
+
+            <a href="#">BLOGS</a>
+
+            <a href="#">CONTACT</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
